@@ -228,8 +228,8 @@ def predict():
             s_Mumbai = 0
             s_Chennai = 0
 
-        Source = request.form["Destination"]
-        if (Source == 'Cochin'):
+        Destination = request.form["Destination"]
+        if (Destination== 'Cochin'):
             d_Cochin = 1
 
             d_New_Delhi = 0
@@ -242,21 +242,21 @@ def predict():
            ##d_Hyderabad = 0
             #d_Kolkata = 0
 
-        elif (Source == 'New_Delhi'):
+        elif (Destination == 'New_Delhi'):
             d_Cochin = 0
             #d_Delhi = 0
             d_New_Delhi = 1
             d_Hyderabad = 0
             d_Kolkata = 0
 
-        elif (Source == 'Hyderabad'):
+        elif (Destination == 'Hyderabad'):
             d_Cochin = 0
             #d_Delhi = 0
             d_New_Delhi = 0
             d_Hyderabad = 1
             d_Kolkata = 0
 
-        elif (Source == 'Kolkata'):
+        elif (Destination == 'Kolkata'):
             d_Cochin = 0
             #d_Delhi = 0
             d_New_Delhi = 0

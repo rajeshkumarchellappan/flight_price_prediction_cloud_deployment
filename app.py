@@ -9,13 +9,14 @@ model = pickle.load(open("model.pkl", "rb"))
 
 
 @app.route("/")
-@cross_origin()
+#@cross_origin()
+
 def home():
     return render_template("index.html")
 
 
 @app.route("/predict", methods=["GET", "POST"])
-@cross_origin()
+#@cross_origin()
 def predict():
     if request.method == "POST":
 
